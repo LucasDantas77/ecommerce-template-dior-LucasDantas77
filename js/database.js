@@ -1,64 +1,40 @@
 // Banco de dados dos produtos
+const listaProducts = [];
 
-const data = [
-  {
-    id: 1,
-    img: "../img/jaqueta.svg",
-    nameItem: "Lightweight Jacket",
-    description:
-      "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 2,
-    img: "../img/gorro.svg",
-    nameItem: "Black Hat",
-    description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
-  },
-  {
-    id: 3,
-    img: "../img/mascara.svg",
-    nameItem: "Mask",
-    description:
-      "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-    value: 40,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
-  },
-  {
-    id: 4,
-    img: "../img/camiseta_preta.svg",
-    nameItem: "T-Shirt",
-    description:
-      "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 5,
-    img: "../img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
-    description:
-      "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 6,
-    img: "../img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
-    description:
-      "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-];
+
+
+function createItem(img, nameItem, description, value, addCart, tag) {
+    let item = {
+       img:img,
+       nameItem:nameItem,
+       description:description,
+       value:value,
+       addCart:addCart,
+       tag:tag
+    }
+
+    return item
+}
+
+
+function createProductsItem(objeto) {
+    listaProducts.push(objeto)
+};
+
+
+let pulloverDior = createItem("dior1.jpeg", "PULÔVER CACTUS JACK DIOR", "Jacquard de cashmere bege e preto", 1200.00, "Adiconar carrinho", "Roupas");
+let  pulloverAmplo= createItem("dior2.jpeg", "PULÔVER CACTUS JACK DIOR AMPLO", "Jacquard de cashmere bege e marrom", 2400.00, "Adiconar carrinho", "Roupas");
+let camisaPolo= createItem("dior3.jpeg", "CAMISA POLO AMPLA CACTUS JACK DIOR", "Jacquard de algodão e seda bege e preto", 1100.00, "Adiconar carrinho", "Roupas");
+let  anoraque= createItem("dior4.jpeg", "ANORAQUE CACTUS JACK DIOR", "Tecido de cashmere marrom", 3000.00, "Adiconar carrinho", "Roupas");
+let  jaqueta= createItem("dior5.jpeg", "JAQUETA BOMBER DIOR OBLIQUE REVERSÍVEL", "Jacquard técnico cinza", 4500.00, "Adiconar carrinho", "Roupas");
+let camisetaAmpla = createItem("dior6.jpeg", "CAMISETA AMPLA CACTUS JACK DIOR", "jérsei de algodão azul-marinho", 1100.00, "Adiconar carrinho", "Roupas")
+createProductsItem(pulloverDior);
+createProductsItem(pulloverAmplo);
+createProductsItem(camisaPolo);
+createProductsItem(anoraque);
+createProductsItem(jaqueta);
+createProductsItem(camisetaAmpla);
+
+console.log(listaProducts);
+
+
