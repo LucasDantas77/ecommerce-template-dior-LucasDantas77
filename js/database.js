@@ -22,7 +22,7 @@ function createProductsItem(objeto) {
 };
 
 
-let pulloverDior = createItem(0, "./img/dior1.jpeg", "PULÔVER CACTUS DIOR AM", "Jacquard de cashmere bege e preto", 1200.00, "Adiconar carrinho", "Roupas");
+let pulloverDior = createItem(0, "./img/dior1.png", "PULÔVER CACTUS DIOR AM", "Jacquard de cashmere bege e preto", 1200.00, "Adiconar carrinho", "Roupas");
 let pulloverAmplo = createItem(1, "./img/dior2.jpeg", "PULÔVER CACTUS JACK DIOR", "Jacquard de cashmere bege e marrom", 2400.00, "Adiconar carrinho", "Roupas");
 let camisaPolo = createItem(2, "./img/dior3.jpeg", "CAMISA POLO CACTUS DIOR", "Jacquard de algodão e seda bege e preto", 1100.00, "Adiconar carrinho", "Roupas");
 let anoraque = createItem(3, "./img/dior4.jpeg", "ANORAQUE CACTUS DIOR", "Tecido de cashmere marrom", 3000.00, "Adiconar carrinho", "Roupas");
