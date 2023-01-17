@@ -81,7 +81,7 @@ function createProdutoCarrinho(produto) {
     remover.classList.add("product-remover-carrinho")
     li.id = posicaoProduto
 
-    img.src = `.${produto.img}`
+    img.src = `${produto.img}`
     spanTitulo.innerText = produto.nameItem
     spanPreco.innerText = `R$ ${produto.value}`
     remover.innerText = 'Remover Produto'
